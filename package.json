@@ -3,20 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "rm -rf node_modules/.cache/ && node scripts/start.js",
+    "clean:cache": "rm -rf node_modules/.cache/",
+    "start": "yarn clean:cache && node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "prettier": "prettier 'src/**/*.@(ts|tsx|html|json)' --write",
-    "lint": "eslint src/ --ext .ts,.tsx --fix --max-warnings 0",
+    "lint": "yarn clean:cache && eslint src/ --ext .ts,.tsx --fix --max-warnings 0",
     "commit": "commit"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E $HUSKY_GIT_PARAMS",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "yarn lint && yarn prettier"
     }
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -26,8 +29,6 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/prompt-cli": "^8.3.5",
     "@svgr/webpack": "4.3.3",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",

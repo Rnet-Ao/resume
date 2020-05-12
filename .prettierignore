@@ -1,4 +1,2 @@
 src/serviceWorker.ts
 src/react-app-env.d.ts
-**/*.test.ts
-**/*.test.tsx
