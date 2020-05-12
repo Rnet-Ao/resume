@@ -26,7 +26,7 @@ module.exports = {
   ],
   rules: {
     // 关闭导入文件需提供文件类型后缀
-    "import/extensions": [2, "never"]
+    "import/extensions": [2, "never"],
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
   },
 };
