@@ -1,44 +1,72 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+简历地址: https://rnet-ao.github.io
 
-## Available Scripts
+个人主页: http://howduudu.site
 
-In the project directory, you can run:
+项目可作为CRA框架配置的入门参考, 基于`create-react-app`配置了`TypeScript`、`eslint`、`prettier`、`precommit`、`commitlint`
 
-### `yarn start`
+也可基于此项目个性化定制自己的简历, 如果有所帮助欢迎star
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# 目录结构
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
+├── .eslintrc.js
+├── .eslintignore
+├── .env
+├── .gitignore
+├── .prettierignore
+├── .prettierrc.js
+├── commitlint.config.js
+├── tsconfig.json
+├── config                                      # CRA脚手架配置文件
+├── package.json
+├── package-lock.json
+├── public
+│   ├── favicon.ico
+│   ├── images
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── README.md
+├── scripts                                     # CRA脚手架脚本文件
+├── src
+│   ├── components
+│   │   ├── index.tsx
+│   │   └── Resume                              # 简历组件
+│   │       ├── data.tsx
+│   │       ├── index.scss
+│   │       ├── index.test.tsx
+│   │       ├── index.tsx
+│   │       └── Photo.tsx
+│   ├── index.tsx
+│   ├── react-app-env.d.ts
+│   ├── resources                               # 字体等资源文件
+│   ├── scss
+│   │   ├── index.scss
+│   │   └── varible.scss
+│   ├── serviceWorker.ts
+│   └── setupTests.ts
+└── yarn.lock
+```
 
-### `yarn test`
+# 开发环境
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Ubuntu Linux 16.04
+* Node v10.16.0
+* Npm v6.14.4
+* Yarn v1.12.3
+* Git v2.26.0
 
-### `yarn build`
+# 命令
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. 安装依赖: `yarn`
+2. 启动开发环境: `yarn start`
+3. 构建: `yarn build`
+4. 代码lint检查: `yarn lint`
+5. 代码格式化: `yarn prettier`
+6. 启动服务器: `yarn server`
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# 关联
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+布局参考: [ESPEN HOVLANDSDAL](https://espen.codes/resume)
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+头像参考: [xiao555](https://xiao555.github.io/Resume/)
