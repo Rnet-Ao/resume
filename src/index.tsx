@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Resume } from './components/index';
 import * as serviceWorker from './serviceWorker';
+import './resources/iconfont.css';
+import './scss/index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Resume />
   </React.StrictMode>,
   document.getElementById('root'),
 );

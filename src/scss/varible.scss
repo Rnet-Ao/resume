@@ -1,0 +1,13 @@
+@mixin getflex($row: flex-start, $col: flex-start, $main: row) {
+  display: -webkit-flex;
+  justify-content: $row;
+  flex-direction: $main;
+  align-items: $col;
+}
+
+@mixin getfull($h: 100%, $w: 100%) {
+  width: $w;
+  height: $h;
+}
+
+$BlogBarHeight: 4.2rem;

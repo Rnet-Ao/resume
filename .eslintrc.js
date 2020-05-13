@@ -29,5 +29,6 @@ module.exports = {
     "import/extensions": [2, "never"],
     "import/no-unresolved": 0,
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "import/prefer-default-export": 0,
   },
 };
