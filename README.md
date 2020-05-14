@@ -2,9 +2,9 @@
 
 个人主页: http://howduudu.site
 
-项目可作为CRA框架配置的入门参考, 基于`create-react-app`配置了`TypeScript`、`eslint`、`prettier`、`precommit`、`commitlint`
+基于create-react-app配置了TypeScript、ESLint、prettier、precommit、commitlint，使用RxJS和Svg制作头像及动画
 
-也可基于此项目个性化定制自己的简历, 如果有所帮助欢迎star
+此项目可作为CRA框架配置的参考, 也可基于此项目个性化定制自己的简历, 如果有所帮助欢迎star ^_^
 
 # 目录结构
 

@@ -1,3 +1,4 @@
+/* eslint prettier/prettier: 0 */
 export default {
   contacts: [
     {
@@ -29,6 +30,12 @@ export default {
       isUrl: true,
     },
   ],
+  source: {
+    name: '项目地址：Rnet-Ao/resume',
+    url: 'https://github.com/Rnet-Ao/resume',
+    desc: '基于create-react-app配置了TypeScript、ESLint、prettier、precommit、commitlint，使用RxJS和Svg制作头像及动画。',
+    shark: '可基于此项目个性化定制自己的简历, 如果有所帮助欢迎star ^_^',
+  },
   download: {
     title: '陈滔-前端开发.pdf',
     url: 'http://howduudu.site/files/%E9%99%88%E6%BB%94-%E5%89%8D%E7%AB%AF.pdf',
@@ -134,7 +141,7 @@ export default {
       url: 'http://www.aispreadtech.com',
       start: '2017.06',
       end: '2018.05',
-      title: '前端开发和数据采集',
+      title: '前端开发、数据采集',
       skills: ['Python', 'React', 'Vue', 'Oracle', 'Kurento Client', 'Docker', 'Linux'],
       experience: [
         {
@@ -171,7 +178,7 @@ export default {
       url: '',
       start: '2016.10',
       end: '2017.06',
-      title: '前端开发和数据采集',
+      title: '前端开发、数据采集',
       skills: ['Python', 'PostgreSQL', 'NodeJS', 'Docker', 'HTML', 'CSS', 'jQuery', 'SeaJS'],
       experience: [
         {

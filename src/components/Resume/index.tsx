@@ -7,7 +7,7 @@ import './index.scss';
 import resumeData from './data';
 
 function Resume() {
-  const { contacts, skills, works, selfs, awards, download, special } = resumeData;
+  const { contacts, skills, works, selfs, awards, download, special, source } = resumeData;
   return (
     <Container>
       <Row>
@@ -76,6 +76,16 @@ function Resume() {
             <p>
               <a href={download.url}>{download.title}</a>
             </p>
+          </section>
+          <section className="box">
+            {/* 项目地址 */}
+            <h2>
+              <i className="anticon icon-exception1" />
+              &nbsp;source
+            </h2>
+            <a href={source.url}>{source.name}</a>
+            <p>{source.desc}</p>
+            <p>{source.shark}</p>
           </section>
           <section className="box">
             {/* 特别申明 */}
