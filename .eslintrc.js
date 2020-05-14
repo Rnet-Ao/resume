@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    "prettier",
   ],
   globals: {
     Atomics: 'readonly',
@@ -23,6 +24,7 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'prettier',
   ],
   rules: {
     // 关闭导入文件需提供文件类型后缀
@@ -33,5 +35,6 @@ module.exports = {
     "no-debugger": process.env.NODE_ENV === 'production' ? 2 : 0,
     "no-console": process.env.NODE_ENV === 'production' ? 2 : 0,
     "max-len": [2, { "code": 120 }],
+    "prettier/prettier": "error",
   },
 };

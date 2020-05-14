@@ -46,11 +46,14 @@ export default function Photo() {
       .subscribe();
     const subscriptionSbj = subject
       .pipe(
-        map((type) => ({
-          leftEyebrow: document.querySelector('.left-eyebrow'),
-          rightEyebrow: document.querySelector('.right-eyebrow'),
-          type,
-        } as Data)),
+        map(
+          (type) =>
+            ({
+              leftEyebrow: document.querySelector('.left-eyebrow'),
+              rightEyebrow: document.querySelector('.right-eyebrow'),
+              type,
+            } as Data),
+        ),
         filter(({ leftEyebrow, rightEyebrow }: Data) => leftEyebrow !== null && rightEyebrow !== null),
       )
       .subscribe({

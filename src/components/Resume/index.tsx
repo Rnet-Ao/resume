@@ -7,15 +7,7 @@ import './index.scss';
 import resumeData from './data';
 
 function Resume() {
-  const {
-    contacts,
-    skills,
-    works,
-    selfs,
-    awards,
-    download,
-    special,
-  } = resumeData;
+  const { contacts, skills, works, selfs, awards, download, special } = resumeData;
   return (
     <Container>
       <Row>
@@ -81,7 +73,9 @@ function Resume() {
               <i className="anticon icon-download" />
               &nbsp;download
             </h2>
-            <p><a href={download.url}>{ download.title }</a></p>
+            <p>
+              <a href={download.url}>{download.title}</a>
+            </p>
           </section>
           <section className="box">
             {/* 特别申明 */}
@@ -89,7 +83,11 @@ function Resume() {
               <i className="anticon icon-exception1" />
               &nbsp;special
             </h2>
-            { special.map((text) => <p key={text} className="text-danger">{ text }</p>) }
+            {special.map((text) => (
+              <p key={text} className="text-danger">
+                {text}
+              </p>
+            ))}
           </section>
         </Col>
         <Col xs={12} sm={12} md={8}>
