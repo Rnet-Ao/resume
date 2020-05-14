@@ -1,4 +1,3 @@
-/* eslint prettier/prettier: 0 */
 export default {
   contacts: [
     {
@@ -33,7 +32,8 @@ export default {
   source: {
     name: '项目地址：Rnet-Ao/resume',
     url: 'https://github.com/Rnet-Ao/resume',
-    desc: '基于create-react-app配置了TypeScript、ESLint、prettier、precommit、commitlint，使用RxJS和Svg制作头像及动画。',
+    desc:
+      '基于create-react-app配置了TypeScript、ESLint、prettier、precommit、commitlint，使用RxJS和Svg制作头像及动画。',
     shark: '可基于此项目个性化定制自己的简历, 如果有所帮助欢迎star ^_^',
   },
   download: {

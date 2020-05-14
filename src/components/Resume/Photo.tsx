@@ -56,20 +56,16 @@ export default function Photo() {
         ),
         filter(({ leftEyebrow, rightEyebrow }: Data) => leftEyebrow !== null && rightEyebrow !== null),
       )
-      .subscribe({
-        next: ({ type, leftEyebrow, rightEyebrow }: Data) => {
-          if (leftEyebrow !== null && rightEyebrow !== null) {
-            if (type === 'enter') {
-              leftEyebrow.style.transform = 'rotate(15deg)';
-              rightEyebrow.style.transform = 'rotate(-15deg)';
-            } else {
-              leftEyebrow.style.transform = '';
-              rightEyebrow.style.transform = '';
-            }
+      .subscribe(({ type, leftEyebrow, rightEyebrow }: Data) => {
+        if (leftEyebrow !== null && rightEyebrow !== null) {
+          if (type === 'enter') {
+            leftEyebrow.style.transform = 'rotate(15deg)';
+            rightEyebrow.style.transform = 'rotate(-15deg)';
+          } else {
+            leftEyebrow.style.transform = '';
+            rightEyebrow.style.transform = '';
           }
-        },
-        complete: () => console.log('complete'),
-        error: (err) => console.log('error', err),
+        }
       });
     return () => {
       subscriptionSbj.unsubscribe();
@@ -79,11 +75,9 @@ export default function Photo() {
   const mouseHandle = useCallback((type) => {
     switch (type) {
       case 'enter':
-        console.log('enter');
         subject.next(type);
         break;
       case 'leave':
-        console.log('leave');
         subject.next(type);
         break;
       default:
