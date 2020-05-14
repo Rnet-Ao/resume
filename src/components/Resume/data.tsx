@@ -33,9 +33,7 @@ export default {
     title: '陈滔-前端开发.pdf',
     url: 'http://howduudu.site/files/%E9%99%88%E6%BB%94-%E5%89%8D%E7%AB%AF.pdf',
   },
-  special: [
-    '外包勿扰!',
-  ],
+  special: ['外包勿扰!'],
   skills: [
     {
       title: '程序语言',
@@ -136,7 +134,7 @@ export default {
       url: 'http://www.aispreadtech.com',
       start: '2017.06',
       end: '2018.05',
-      title: '全栈开发',
+      title: '前端开发和数据采集',
       skills: ['Python', 'React', 'Vue', 'Oracle', 'Kurento Client', 'Docker', 'Linux'],
       experience: [
         {
@@ -173,7 +171,7 @@ export default {
       url: '',
       start: '2016.10',
       end: '2017.06',
-      title: '全栈开发',
+      title: '前端开发和数据采集',
       skills: ['Python', 'PostgreSQL', 'NodeJS', 'Docker', 'HTML', 'CSS', 'jQuery', 'SeaJS'],
       experience: [
         {

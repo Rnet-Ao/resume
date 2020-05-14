@@ -15,6 +15,10 @@
       border: #334960 5px solid;
       background: #f0f3f5;
       display: inline-block;
+      .line {
+        stroke: #000;
+        stroke-width: 5;
+      }
     }
     &-text h1 {
       margin: 0;

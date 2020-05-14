@@ -30,5 +30,8 @@ module.exports = {
     "import/no-unresolved": 0,
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "import/prefer-default-export": 0,
+    "no-debugger": process.env.NODE_ENV === 'production' ? 2 : 0,
+    "no-console": process.env.NODE_ENV === 'production' ? 2 : 0,
+    "max-len": [2, { "code": 120 }],
   },
 };
