@@ -7,7 +7,7 @@ import './index.scss';
 import resumeData from './data';
 
 function Resume() {
-  const { contacts, skills, works, selfs, awards, download, special, source } = resumeData;
+  const { contacts, skills, works, selfs, awards, download, special, source, codes } = resumeData;
   return (
     <Container>
       <Row>
@@ -76,6 +76,18 @@ function Resume() {
             <p>
               <a href={download.url}>{download.title}</a>
             </p>
+          </section>
+          <section className="box">
+            {/* 代码 */}
+            <h2>
+              <i className="anticon icon-codesquareo" />
+              &nbsp;codes
+            </h2>
+            {codes.map(({ title, url }) => (
+              <p key={title} className="text-primary">
+                <a href={url}>{title}</a>
+              </p>
+            ))}
           </section>
           <section className="box">
             {/* 项目地址 */}

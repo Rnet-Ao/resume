@@ -40,6 +40,12 @@ export default {
     title: '陈滔-前端开发.pdf',
     url: 'http://howduudu.site/files/%E9%99%88%E6%BB%94-%E5%89%8D%E7%AB%AF.pdf',
   },
+  codes: [
+    {
+      title: '词汇滑动标记',
+      url: '/select-text',
+    },
+  ],
   special: ['外包勿扰!'],
   skills: [
     {
