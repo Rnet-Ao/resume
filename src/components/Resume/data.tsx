@@ -44,11 +44,11 @@ export default {
   skills: [
     {
       title: '程序语言',
-      lists: ['ECMAScript 5+', 'JavaScript', 'TypeScript', 'Python', 'C++', 'Lua', 'HTML', 'CSS', 'Dart'],
+      lists: ['ECMAScript 5+', 'JavaScript', 'TypeScript', 'Python', 'C++', 'HTML', 'CSS', 'Dart'],
     },
     {
       title: '前端框架',
-      lists: ['React', 'Vue', 'jQuery', 'Dva', 'Flutter'],
+      lists: ['React', 'Vue', 'jQuery', 'Dva'],
     },
     {
       title: '后端框架',
@@ -56,33 +56,7 @@ export default {
     },
     {
       title: '数据库',
-      lists: ['PostgreSQL', 'Oracle', 'Redis', 'MongoDB', 'IndexDB'],
-    },
-    {
-      title: '其它',
-      lists: [
-        'Linux',
-        'Vim',
-        'Git',
-        'Docker',
-        'Webpack',
-        'Create React App',
-        'Redux',
-        'Canvas',
-        'Svg',
-        'Ant Design',
-        'Element UI',
-        'Bootstrap',
-        'SQLAlchemy',
-        'Sequelize',
-        'Selenium',
-        'RxJS',
-        'Burpsuit',
-        'Mitmproxy',
-        'Charles',
-        'WebRTC',
-        'KurentoJS',
-      ],
+      lists: ['PostgreSQL', 'Oracle', 'Redis', 'IndexDB'],
     },
   ],
   awards: [

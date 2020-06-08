@@ -36,5 +36,8 @@ module.exports = {
     "no-console": process.env.NODE_ENV === 'production' ? 2 : 0,
     "max-len": [2, { "code": 120 }],
     "prettier/prettier": "error",
+    "jsx-a11y/no-static-element-interactions": 0,
+    "react/no-danger": 0,
+    "no-alert": 0,
   },
 };

@@ -1,0 +1,77 @@
+@import '../../scss/varible.scss';
+.select-text {
+  margin: 10px auto 0;
+  max-width: 980px;
+  background: #fff;
+  padding: 10px;
+  .header {
+    margin-bottom: 10px;
+    button {
+      margin-right: 5px;
+    }
+  }
+  .tools {
+    border: 1px solid #ccc;
+    @include getflex(space-between);
+    font-size: 14px;
+    padding: 4px 10px;
+    &-fontsize-select {
+      width: 60px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      height: 100%;
+      border-radius: 0;
+      vertical-align: baseline;
+    }
+    &-mode-select {
+      vertical-align: baseline;
+      width: 80px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-left: 20px;
+      height: 100%;
+      border-radius: 0;
+    }
+    .mode {
+      display: inline-block;
+      text-align: center;
+      background: #007bff;
+      color: #fff;
+      width: 80px;
+    }
+  }
+  .main {
+    border: 1px solid #ccc;
+    border-top: 0px solid #ccc;
+    line-height: 220%;
+    position: relative;
+    .main-origin, .main-cover {
+      display: block;
+      padding: 10px;
+      span {
+        position: relative;
+        .type {
+          cursor: default;
+          padding: 1px 2px;
+          line-height: 100%;
+          border: 1px solid;
+          font-size: 0.7em;
+          display: inline-block;
+          position: absolute;
+          top: -60%;
+          left: 1px;
+        }
+      }
+    }
+    .main-cover {
+      position: absolute;
+      outline: none;
+      top: 0px;
+      color: rgba(0, 0, 0, 0);
+    }
+  }
+  .footer {
+    margin-top: 10px;
+    @include getflex(flex-end);
+  }
+}
