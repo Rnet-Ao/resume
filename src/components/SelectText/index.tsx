@@ -2,6 +2,7 @@ import React, { useState, useMemo, useCallback } from 'react';
 import './index.scss';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import { article, btns } from './data';
 
 interface Select {
@@ -133,4 +134,19 @@ function SelectText() {
   );
 }
 
-export default SelectText;
+function packComponent(comp: any) {
+  return (props: any) => (
+    <>
+      <Breadcrumb className="bread">
+        <Breadcrumb.Item href="/#/">简历页</Breadcrumb.Item>
+        <Breadcrumb.Item active>词汇滑动标记</Breadcrumb.Item>
+        <Breadcrumb.Item href="https://github.com/Rnet-Ao/resume/tree/master/src/components/SelectText">
+          源码
+        </Breadcrumb.Item>
+      </Breadcrumb>
+      {comp(props)}
+    </>
+  );
+}
+
+export default packComponent(SelectText);

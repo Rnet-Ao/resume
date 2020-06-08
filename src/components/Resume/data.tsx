@@ -43,7 +43,7 @@ export default {
   codes: [
     {
       title: '词汇滑动标记',
-      url: '/select-text',
+      url: '/#/select-text',
     },
   ],
   special: ['外包勿扰!'],

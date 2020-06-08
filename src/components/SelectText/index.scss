@@ -1,6 +1,13 @@
 @import '../../scss/varible.scss';
+.bread {
+  margin: 1rem auto 0;
+  max-width: 980px;
+  .breadcrumb {
+    padding: 0.5rem 1rem;
+  }
+}
 .select-text {
-  margin: 10px auto 0;
+  margin: 0px auto 0;
   max-width: 980px;
   background: #fff;
   padding: 10px;
